@@ -1,17 +1,22 @@
 # Documentation
 
-Contributing to documention on readthedocs.org
+Contributing to documentation on readthedocs.org
 
-## Setup and build the HTML
+## Environment Setup
 
-Install Sphinx and build the HTML documentation
+### With `pip`
 
-```
-python3 -m venv venv
-. venv/bin/activate
+```bash
+python3 -m venv observable-jupyter
+source observable-jupyter/bin/activate
 pip install -r requirements.txt
-make html
-open build/html/index.html
+```
+
+### With `conda`
+
+```bash
+conda create -n observable-jupyter --file environment.yml
+conda activate observable-jupyter
 ```
 
 ## Add a demo to the Gallery
@@ -27,8 +32,18 @@ open build/html/index.html
 * Add an entry for the notebook in source/VisualizationLibrary.rst
 * Rebuild the HTML (see above)
 
-## Seeing your changes
+## Build
 
-* Push Branch to Github 
-* Once pull a pull request is accepted readthedocs will be updated
+The recommended method of building is using the `Makefile`:
+
+```
+make html
+```
+
+This will generate the static site in the [./build/](./build/) directory. To view the site, open [./build/html/index.html](./build/html/index.html).
+
+## Contributing
+
+* Commit your changes to a new branch and push to GitHub
+* Open a pull request. Once reviewed and approved, your changes will be visible on [readthedocs.org](https://observable-jupyter.readthedocs.io/en/latest/).
 
