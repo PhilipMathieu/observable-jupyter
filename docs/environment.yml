@@ -1,0 +1,12 @@
+name: observable-jupyter
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - sphinx[version='>=1.4']
+  - ipykernel
+  - nbsphinx
+  - sphinx-copybutton
+  - sphinx-gallery
+  - sphinx-design
+  - sphinx-rtd-theme
