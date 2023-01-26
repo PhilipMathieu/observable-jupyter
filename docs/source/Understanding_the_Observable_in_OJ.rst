@@ -2,31 +2,42 @@
 Relating Observable to Observable-Jupyter
 =========================================
 
-Observable-Jupyter would not exist without Observable and yet
-you might be asking yourself the excelent questions: *What is Observable?* 
-and *How do these two programs related?* 
+At the most basic level, Observable-Jupyter is a library for embedding Observable cells in a Jupyter notebook. To better understand what this means, it's helpful to start by describing what Observable is and why it can be useful for Python-based programming.
 
 What is Observable?
 -------------------
-At a fundamental level Observable is a software similar to Jupyter notebooks and Google Colabs. It allows users to write code and markdown in a series
-of cells. However, it differs in that Observable Notebooks are reactive and written in Javascript. 
+Observable is a cell-based platform for JavaScript programming. It functions in a similar way to how
+Jupyter notebooks and Google Colab work for Python programming. Observable cells can contain JavaScript,
+HTML/CSS, or Markdown.
 
-These two freatures of Observable are what make it a great tool for data visualization. 
+Observable provides a few key capabilities:
 
 .. card:: 
 
-    Javascript
+    JavaScript
     ^^^
-    Javascript gives Observable users access to great visualization and charting
-    libraries like d3 and observable plot among others.
+    As a JavaScript platform, Observable natively supports popular visualization libraries such
+    as d3, Leaflet/MapBox/MapLibre, and others.
     
+
+.. card::
+
+    Topological Dependencies
+    ^^^
+    Unlike Jupyter notebooks, where values are updated in the order that cells are run, Observable
+    maintains a dependency graph behind the scenes. This means that when the value of a variable 
+    changes, all cells that depend on that value re-run automatically. This improve reproducibility
+    and enables techniques such as literate programming by eliminating the need to structure the
+    notebook around the order in which cells must be run.
 
 .. card::           
 
-    Reactivity
+    Interactivity
     ^^^
-    Reactivity makes it so that a change in one cell will then trigger changes other associated cells meaning
-    any modification in the data processing pipeline will automaticaly be expressed in a visualization.
+    Because it is based on web technologies, building interactive elements in Observable requires
+    only a basic knowledge of JavaScript. This also means that any visualizations developed 
+    via Observable are easily incorporated into web apps and other front-end frameworks. This cannot
+    be said of the native Python interactive elements.
 
 Observable Community
 --------------------
@@ -34,12 +45,12 @@ Observable Community
 Observable is not just software. It is also a community of data practitioners who are passionate
 about visualization.
 
-All published Notebooks on Observable are open source and it is common for users to build off of eachothers work. 
-This is great news for us Observable-Jupyter users since it means that there are countless visualizations at our 
-finger tips that we can simply modify, embed, and use in our own projects.
+All published Notebooks on Observable are open source and it is common for users to build off of each others work. 
+This is great news for Observable-Jupyter users since it means that there are countless visualizations at our 
+fingertips that we can simply modify, embed, and use in our own projects.
 
 
-Observable Vs Observable-Jupyter
+Observable vs Observable-Jupyter
 --------------------------------
  
 It is best to think of Observable-Jupyter as a program that works in collaboration with Observable.
@@ -47,7 +58,7 @@ It is best to think of Observable-Jupyter as a program that works in collaborati
 Given that a majority of the data science community works with python, Observable Jupyter looks to introduce python 
 users to Observable by giving them access to visualizations that are made with powerful visualization libraries like d3. 
 
-Observable-Jupyter gives python users access to Observable visualizations by using APIs provided by Observable to pass data back and forth essentialy allowing python users to modify
+Observable-Jupyter gives Python users access to Observable visualizations by using APIs provided by Observable to pass data back and forth essentially allowing Python users to modify
 existing Observable notebooks for their own personal projects. 
 
 .. note::

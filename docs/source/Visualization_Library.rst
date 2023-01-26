@@ -12,7 +12,7 @@ Animated Visualizations are a great way to visualize data while also catching
 the atention of an audience.
 
 ..  nbgallery::
-   :caption: Animation Galery:
+   :caption: Animation Gallery:
    :name: Animation-gallery
    :glob:
    :reversed:
@@ -26,7 +26,7 @@ Interactivity in visualizations is one of the stand out features Observable and 
 have to offer.
 
 .. nbgallery::
-   :caption: Interactive Galery:
+   :caption: Interactive Gallery:
    :name: Interactive-gallery
    :glob:
    :reversed:
@@ -39,10 +39,10 @@ have to offer.
 Maps
 ----
 
-Maps are made easy with observable
+Maps are made easy with Observable
 
 ..  nbgallery::
-   :caption: Maps Galery:
+   :caption: Maps Gallery:
    :name: Maps-gallery
    :glob:
    :reversed:
@@ -56,7 +56,7 @@ Analysis
 Your standard Analysis tools such as bar charts, scatter plots, histograms and more.
 
 ..  nbgallery::
-   :caption: Analysis Galery:
+   :caption: Analysis Gallery:
    :name: Analysis-gallery   
    :glob:
    :reversed:

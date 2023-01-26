@@ -3,11 +3,23 @@ Installing Observable-Jupyter
 =============================
 
 To get started using Observable-Jupyter, first install the library using pip.
-Do this by pasting the following block of code to the terminal or a notebook environment.
-  
-.. code-block:: console
+This can be done a few ways.
 
-   $!pip install observable_jupyter
+.. card::
+   **From the Command Line**
+   ^^^
+
+   .. code-block:: console
+
+      pip install observable_jupyter
+
+.. card::
+   **From a Notebook Cell**
+   ^^^
+
+   .. code-block:: console
+
+      !pip install observable_jupyter
 
 Once you have installed Observable-Jupyter open up a .py or .ipynb file and run the following
 block of code to make sure the installation worked properly and that you have the latest version

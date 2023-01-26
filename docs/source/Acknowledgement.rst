@@ -1,5 +1,5 @@
 ===============
-Acknowledgement
+Acknowledgements
 ===============
 
 Special thanks to:
@@ -10,6 +10,10 @@ Special thanks to:
 
 * Thomas Ballinger
 
-* Professor Philip Bogden
+* Philip Bogden
+
+* Ramiro Storni
+
+* Philip Mathieu
 
 
